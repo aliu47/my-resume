@@ -18,7 +18,7 @@ function NavigationMenu(props) {
                 <ul>
                     <li>
                         <Link
-                            to="/"
+                            to="/my-resume"
                             className=" py-3 border-t border-b block"
                             onClick={props.closeMenu}>
                             >Home
@@ -26,7 +26,7 @@ function NavigationMenu(props) {
                     </li>
                     <li>
                         <Link
-                            to="/about"
+                            to="/my-resume/about"
                             className=" py-3  border-b block"
                             onClick={props.closeMenu}>
                             >About</Link>
@@ -34,7 +34,7 @@ function NavigationMenu(props) {
 
                         <li>
                         <Link
-                            to="/projects"
+                            to="/my-resume/projects"
                             className=" py-3  border-b block"
                             onClick={props.closeMenu}>
                             >Projects</Link>

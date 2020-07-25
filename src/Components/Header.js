@@ -9,7 +9,7 @@ function Header() {
     return (
         <header className="border-b  p-3 flex bg-opacity-90 items-center text-center bg-gray-900">
             <Navigation />
-            <Link to="/">
+            <Link to="/my-resume">
                 <span className="font text-gray-100  p-3">Andrew Liu's Resume</span>
             </Link>
             
