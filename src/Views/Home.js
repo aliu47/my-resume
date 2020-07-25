@@ -1,10 +1,13 @@
 import React from 'react'
 
 function Home() {
-    return (<div>
-        <h1 className="font-bold text-2xl mb">Checkout</h1>
+    return (<div className="text-center bg-gray-900">
+        <h1 className=" text-gray-100 text-5xl mb text-shadow-xl">Andrew Liu</h1>
+        <h2> | Software Engineer</h2>
+        <h2>University of North Carolina at Charlotte</h2>
+        <h2>aliu4@uncc.edu</h2>
         <p>
-            This is the about page content
+
         </p>
     </div>)
 }

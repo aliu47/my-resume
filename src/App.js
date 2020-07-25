@@ -9,11 +9,12 @@ import {
 } from "react-router-dom"
 import Home from './Views/Home';
 import About from './Views/About';
+import Projects from './Views/Projects';
 
 function App() {
   return (
-    <div className="relative pb-10 min-h-screen">
-       <Router>
+    <div className="relative pb-10 min-h-screen text-gray-100 ">
+      <Router>
         <Header />
 
         <Switch>
@@ -24,9 +25,13 @@ function App() {
           <Route path="/about">
             <About />
           </Route>
-        </Switch>
 
-      <Footer/>
+          <Route path="/projects">
+            <Projects />
+          </Route>
+        </Switch>
+        
+        <Footer />
       </Router>
     </div>
   );

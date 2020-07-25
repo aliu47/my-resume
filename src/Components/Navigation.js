@@ -32,14 +32,13 @@ function Navigation() {
                     style={props}
                     className="bg-black-t-50 fixed top-0 left-0 w-full h-full z-50"
                     onClick={() => setShowMenu(false)}>
-                    This is a menu
                 </animated.div>
             )}
             {menuTransitions.map(({ item, key, props }) =>
                 item && <animated.div
                     key={key}
                     style={props}
-                    className="fixed bg-white top-0 left-0 w-4/5 h-full z-50 shadow p-3">
+                    className="fixed bg-gray-900 top-0 left-0 w-1/8 h-full z-50 shadow p-3">
                     <NavigationMenu
                         closeMenu={() => setShowMenu(false)}
                         />

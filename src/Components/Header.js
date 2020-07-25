@@ -7,11 +7,12 @@ import {
 
 function Header() {
     return (
-        <header className="border-b  p-3 flex  items-center">
+        <header className="border-b  p-3 flex bg-opacity-90 items-center text-center bg-gray-900">
             <Navigation />
             <Link to="/">
-                <span className="font-bold p-3">AppName</span>
+                <span className="font text-gray-100  p-3">Andrew Liu's Resume</span>
             </Link>
+            
         </header>
     )
 }
