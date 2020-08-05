@@ -12,7 +12,7 @@ function About() {
         </span>
         <h1 className="font-semibold text-4xl mb" >About Me</h1>
         <p className="pt-2">
-            Hello! As the title implies I am Andrew Liu. I am a
+            Hello! Thank you for looking at my website, I am Andrew Liu. I am a
             computer science graduate student at the
             University of North Carolina at Charlotte. I am always looking for new challenges (and employment)
             in the tech world. My primary passions lie in Android development, Java development, and Web development.

@@ -5,6 +5,7 @@ import About from '../Components/About';
 import LeftContent from '../Components/LeftContent/LeftContent';
 import { animated, useSpring } from 'react-spring';
 import ProjectsContent from '../Components/ProjectsContent';
+import Contact from '../Components/Contact';
 
 function Home() {
     const props = useSpring({ scroll: 0, from: { scroll: 100 } })
@@ -25,7 +26,10 @@ function Home() {
                     <TimelineContent />
                 </div>
                 <div className="lg:mx-40 lg:my-10 lg:mb-20 text-center">
-                    <ProjectsContent/>
+                    <ProjectsContent />
+                </div>
+                <div className="lg:mx-64 lg:my-10 lg:mb-20 text-center">
+                    <Contact />
                 </div>
             </div >
         </animated.div>)

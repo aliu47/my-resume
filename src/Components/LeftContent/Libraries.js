@@ -18,7 +18,7 @@ function Libraries(){
     <div className="px-0 py-4" data-aos="fade-right">
                 {langauages.map((tag, key) =>
                    <span key={key}
-                        className="inline-block bg-gray-200 rounded-full px-3 py-1 mt-3 text-sm font-semibold text-gray-700 mr-2">
+                        className="inline-block bg-gray-200 rounded-full px-3 py-1 mt-3 text-sm font-semibold text-gray-700 mr-1">
                         {tag}</span>
                 )}
 
