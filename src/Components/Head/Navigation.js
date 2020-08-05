@@ -18,9 +18,9 @@ function Navigation() {
     })
 
     return (
-        <nav>
+        <nav className="">
 
-            <span className="text-xl">
+            <span className="text-xl hover:text-teal-500 cursor-pointer">
                 <FontAwesomeIcon
                     icon={faBars}
                     onClick={() => setShowMenu(!showMenu)}
@@ -35,14 +35,14 @@ function Navigation() {
                 </animated.div>
             )}
             {menuTransitions.map(({ item, key, props }) =>
-                item && <animated.div
+                item && <animated.header
                     key={key}
                     style={props}
-                    className="fixed bg-gray-900 top-0 left-0 w-1/8 h-full z-50 shadow p-3">
+                    className="fixed bg-white top-0 left-0 w-1/5 h-full shadow p-3 fixed z-50">
                     <NavigationMenu
                         closeMenu={() => setShowMenu(false)}
                         />
-                </animated.div>
+                </animated.header>
             )}
         
         </nav>

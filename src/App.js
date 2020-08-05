@@ -1,6 +1,6 @@
 import React from 'react';
 import './tailwind.css';
-import Header from './Components/Header';
+import Header from './Components/Head/Header';
 import Footer from './Components/Footer';
 import {
   BrowserRouter as Router,
@@ -8,30 +8,32 @@ import {
   Route,
 } from "react-router-dom"
 import Home from './Views/Home';
-import About from './Views/About';
 import Projects from './Views/Projects';
+import Timeline from './Views/Timeline';
 
 function App() {
   return (
-    <div className="relative pb-10 min-h-screen text-gray-100 ">
+    <div className="relative pb-10 min-h-screen max-w-screen font-serif">
       <Router>
-        <Header />
+      {/* <Header /> */}
 
         <Switch>
-          <Route  path="/">
+          <Route exact path="/resume">
             <Home />
           </Route>
 
-          <Route path="/my-resume/about">
-            <About />
+          <Route path="/projects">
+            <Projects />
           </Route>
 
-          <Route path="/my-resume/projects">
-            <Projects />
+          <Route path="/timeline">
+            <Timeline/>
           </Route>
         </Switch>
 
+
         <Footer />
+        
       </Router>
     </div>
   );

@@ -1,15 +1,34 @@
 import React from 'react'
+import Info from '../Components/Info';
+import TimelineContent from '../Components/TimelineContent';
+import About from '../Components/About';
+import LeftContent from '../Components/LeftContent/LeftContent';
+import { animated, useSpring } from 'react-spring';
+import ProjectsContent from '../Components/ProjectsContent';
 
 function Home() {
-    return (<div className="text-center bg-gray-900">
-        <h1 className=" text-gray-100 text-5xl mb text-shadow-xl">Andrew Liu</h1>
-        <h2> | Software Engineer</h2>
-        <h2>University of North Carolina at Charlotte</h2>
-        <h2>aliu4@uncc.edu</h2>
-        <p>
+    const props = useSpring({ scroll: 0, from: { scroll: 100 } })
 
-        </p>
-    </div>)
+    return (
+        <animated.div scrollTop={props.scroll}  >
+            <div className="">
+                <div className="text-center">
+                    <div className="">
+                        <Info />
+                    </div>
+                    <div className="lg:mx-64 lg:my-10 lg:mb-20">
+                        <About />
+                    </div>
+                </div>
+                <div className="xl:mx-40 grid lg:grid-cols-2 gap-0">
+                    <LeftContent />
+                    <TimelineContent />
+                </div>
+                <div className="lg:mx-40 lg:my-10 lg:mb-20 text-center">
+                    <ProjectsContent/>
+                </div>
+            </div >
+        </animated.div>)
 }
 
 export default Home

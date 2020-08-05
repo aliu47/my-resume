@@ -2,14 +2,16 @@
   "name": "my-resume",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://aliu47.github.io/my-resume/",
+  "homepage": "https://aliu47.github.io/resume",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.30",
+    "@fortawesome/free-brands-svg-icons": "^5.14.0",
     "@fortawesome/free-solid-svg-icons": "^5.14.0",
     "@fortawesome/react-fontawesome": "^0.1.11",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
     "@testing-library/user-event": "^7.2.1",
+    "aos": "^2.3.4",
     "autoprefixer": "^9.8.5",
     "gh-pages": "^3.1.0",
     "postcss-cli": "^7.1.1",
@@ -18,6 +20,7 @@
     "react-router-dom": "^5.2.0",
     "react-scripts": "3.4.1",
     "react-spring": "^8.0.27",
+    "react-youtube": "^7.11.3",
     "tailwindcss": "^1.5.2"
   },
   "scripts": {
