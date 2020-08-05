@@ -22,7 +22,7 @@ function ProjectsContent() {
            <Project
                 title="Ride America"
                 tags={['Android','Firebase','GooglePlaces']}
-                desc="Developed an android application that allows usersto create & talk in various chatrooms. In these chatrooms, the user is also
+                desc="Developed an android application that allows users to create & talk in various chatrooms. In these chatrooms, the user is also
                 able to request a ride from other users. After one of the other users offer and the rider accepts, they are both taken to a screen
                 that displays a map and the current location of both users. For the map we used the Google Places API."
                 url="xwx2RIgIBh8"
