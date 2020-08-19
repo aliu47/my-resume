@@ -13,7 +13,7 @@ function Databases(){
                 size='2x'
             />
         </span>
-        <span className="align-bottom">Databases</span>
+        <span className="align-bottom ">Databases</span>
     </h1>
     <div className="px-0 py-4" data-aos="fade-right">
                 {langauages.map((tag, key) =>

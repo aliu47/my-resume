@@ -1,11 +1,11 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faUserCircle, faProjectDiagram } from '@fortawesome/free-solid-svg-icons';
+import { faProjectDiagram } from '@fortawesome/free-solid-svg-icons';
 import Project from './Project';
 
 
 function ProjectsContent() {
-    return (<div className="lg:text-2xl lg:mx-32" data-aos="fade-up">
+    return (<div className="overflow-x-hidden lg:text-2xl lg:mx-32 justify-center pb-12 " data-aos="fade-up">
         <span className="text-orange-400">
             <FontAwesomeIcon
                 icon={faProjectDiagram}
@@ -13,12 +13,12 @@ function ProjectsContent() {
             />
         </span>
         <div className="mb-8">
-        <h1 className="font-semibold text-4xl" >Projects</h1>
-        <p className="pt-2">
+        <h1 className="font-semibold text-4xl  font-mono "  >Projects</h1>
+        <p className="pt-2" data-aos="fade-up" >
             Here are a couple projects that I have worked on!
                     </p>
         </div>
-        <div className="grid lg:grid-cols-2 gap-16 flex">
+        <div className="grid lg:grid-cols-2 gap-16 flex justify-center">
            <Project
                 title="Ride America"
                 tags={['Android','Firebase','GooglePlaces']}

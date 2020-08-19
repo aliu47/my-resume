@@ -25,20 +25,12 @@ function Info() {
 
     }));
 
-    const [flipped, set] = useState(false)
-    const { transform, opacity } = useSpring({
-        opacity: flipped ? 1 : 0,
-        transform: `perspective(600px) rotateX(${flipped ? 180 : 0}deg)`,
-        config: { mass: 5, tension: 500, friction: 80 }
-    })
-
-
     useEffect(() => {
         Aos.init({ duration: 500 });
     }, []);
 
 
-    return (<div className="lg:mt-40 lg:mx-64 lg:text-2xl my-10 " >
+    return (<div className="mt-40 lg:mx-64 lg:text-2xl my-10" >
         <animated.div className="text-center" style={fade}>
             <h1 className="  text-5xl mb font-semibold " >Andrew Liu</h1>
             <h2> Software Engineer</h2>
@@ -63,33 +55,21 @@ function Info() {
 
         <div data-aos="flip" className="my-20 grid lg:grid-cols-4 gap-4 grid-cols-2 m-4">
             <button className="transition duration-500 shadow-xl bg-transparent hover:bg-teal-500 text-teal-dark font-semibold hover:text-white py-2 px-4 border border-teal-500 hover:border-transparent rounded mr-2 focus:outline-none"
-                onClick={() => {
-                    setY({ y: 600 })
-                }}
-            >
-                About Me</button>
+                onClick={() => {setY({ y: 600 })
+                }} >About Me</button>
             <button className="transition duration-500 shadow-xl bg-transparent hover:bg-teal-500 text-teal-dark font-semibold hover:text-white py-2 px-4 border border-teal-500 hover:border-transparent rounded mr-2 focus:outline-none"
                 onClick={() => {
                     setY({ y: 800 })
-                }}
-            >
-                Resume</button>
+                }}>Resume </button>
             <button className="transition duration-500 shadow-xl bg-transparent hover:bg-teal-500 text-teal-dark font-semibold hover:text-white py-2 px-4 border border-teal-500 hover:border-transparent rounded mr-2 focus:outline-none"
-                onClick={() => {
-                    setY({ y: 2800 })
-                }}>
-                Projects</button>
+                onClick={() => {window.innerWidth<500?
+                    setY({ y: 4600 }):setY({ y: 2800 })
+                }}>Projects</button>
             <button className="transition duration-500 shadow-xl bg-transparent hover:bg-teal-500 text-teal-dark font-semibold hover:text-white py-2 px-4 border border-teal-500 hover:border-transparent rounded mr-2 focus:outline-none"
-                onClick={() => {
-                    setY({ y: 4100 })
-                }}>
-                Contact</button>
+                onClick={() => {window.innerWidth<500?
+                    setY({ y: 6800 }):setY({ y: 4100 })
+                }}> Contact</button>
         </div>
-        <div onClick={() => set(state => !state)}>
-            {/* <animated.div className="h-40 w-40 bg-teal-700" style={{ opacity: opacity.interpolate(o => 1 - o), transform }} />
-      <animated.div className="bg-orange-400 w-40 h-0" style={{ opacity, transform: transform.interpolate(t => `${t} rotateX(180deg)`) }} /> */}
-        </div>
-
     </div >)
 }
 

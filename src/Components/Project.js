@@ -1,6 +1,6 @@
-import React, { useState } from 'react'
+import React, {  } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faUserCircle, faProjectDiagram, faExternalLinkAlt } from '@fortawesome/free-solid-svg-icons';
+import {  faExternalLinkAlt } from '@fortawesome/free-solid-svg-icons';
 import Youtube from 'react-youtube';
 
 function Project(props) {
@@ -9,6 +9,9 @@ function Project(props) {
     const opts = {
         height: '200',
         width: '300',
+        playerVars: {
+            // https://developers.google.com/youtube/player_parameters
+        },
     }
 
     if (props.web) {
@@ -29,12 +32,11 @@ function Project(props) {
     }
 
     if (props.count == 1) {
-        content = <div className="max-w-sm rounded overflow-hidden shadow-2xl h-auto lg:mt-0 lg:mb-4" data-aos="flip-up" data-aos-duration="500"
+        content = <div className="max-w-sm rounded overflow-hidden shadow-2xl lg:mt-0 lg:mb-4" data-aos="flip-up" data-aos-duration="500"
             >
-            <img className="w-full" src="/img/card-top.jpg" alt="" />
-            <div className="px-6 py-4">
-                <div className="font-bold text-xl mb-2">{props.title}</div>
-                <p className="text-gray-700 text-base">
+            <div className="lg:px-6 py-4">
+                <div className="font-bold text-xl mb-2 font-mono">{props.title}</div>
+                <p className="text-gray-700 text-base m-2">
                     {props.desc}
                 </p>
             </div>
@@ -42,7 +44,7 @@ function Project(props) {
             <div className="px-6 py-4">
                 {props.tags.map((tag, key) =>
                     <span key={key}
-                        className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">
+                        className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold font-mono text-gray-700 mr-2">
                         {tag}</span>
                 )}
 
@@ -55,10 +57,9 @@ function Project(props) {
     if (props.count == 2) {
         content = <div className="max-w-sm rounded overflow-hidden shadow-2xl h-auto lg:my-8 lg:mb-0" data-aos="flip-up" data-aos-duration="500"
             data-aos-offset="250">
-            <img className="w-full" src="/img/card-top.jpg" alt="" />
-            <div className="px-6 py-4">
-                <div className="font-bold text-xl mb-2">{props.title}</div>
-                <p className="text-gray-700 text-base">
+            <div className="lg:px-6 py-4">
+                <div className="font-bold text-xl mb-2 font-mono">{props.title}</div>
+                <p className="text-gray-700 text-base m-2">
                     {props.desc}
                 </p>
             </div>
@@ -66,7 +67,7 @@ function Project(props) {
             <div className="px-6 py-4">
                 {props.tags.map((tag, key) =>
                     <span key={key}
-                        className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">
+                        className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 font-mono">
                         {tag}</span>
                 )}
 

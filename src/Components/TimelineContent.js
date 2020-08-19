@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React, { } from 'react'
 import { useSpring, animated } from 'react-spring';
 import {Summer2018,TeachingAssistant, Undergrad, Masters
 } from './Semesters/index.js'
@@ -24,12 +24,7 @@ function TimelineContent() {
         </li>
     )
    
-    return (<div>
-        <div>
-            <div className="flex-1 ml-4 font-semibold">
-                {/* <h1 className="text-3xl">Timeline of my work and university projects</h1> */}
-            </div>
-        </div>
+    return (<div className="overflow-hidden ">
         <div className="relative xl:w-4/5 s:p-3 my-8 ">
             <div className="border-r-2 border-teal-500 absolute h-full top-0 p-2"></div>
             <ul className="list-none m-0 p-0">

@@ -10,8 +10,8 @@ function About() {
                 size="4x"
             />
         </span>
-        <h1 className="font-semibold text-4xl mb" >About Me</h1>
-        <p className="pt-2">
+        <h1 className="font-semibold text-4xl mb font-mono">About Me</h1>
+        <p className="pt-2" data-aos="fade-up" >
             Hello! Thank you for looking at my website, I am Andrew Liu. I am a
             computer science graduate student at the
             University of North Carolina at Charlotte. I am always looking for new challenges (and employment)

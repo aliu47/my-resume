@@ -5,10 +5,10 @@ function Undergrad() {
         <div className="">
             <div className="flex items-center mb-1 ">
                 <div className="bg-teal-500 rounded-full h-8 w-8"></div>
-                <div className="flex-1 ml-4 font-semibold lg:text-xl">Aug 2015 - May 2019: Undergrad Degree</div>
+                <div className="flex-1 ml-4 font-semibold lg:text-xl font-mono">Aug 2015 - May 2019: Undergrad Degree</div>
             </div>
             <div className="ml-12 ">
-                <span className="p-1 flex font-semibold"> GPA:3.65/4.00 </span>
+                <span className="p-1 flex font-semibold"> GPA: 3.65/4.00 </span>
                 <span className="p-1 flex">Concentration in Web and Mobile Application development</span>
                 <div data-aos="fade-left">
 

@@ -1,6 +1,6 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCloudDownloadAlt, faEye, faFilePdf, faFileAlt } from '@fortawesome/free-solid-svg-icons';
+import { faCloudDownloadAlt, faEye, faFileAlt } from '@fortawesome/free-solid-svg-icons';
 import pdf from '../../Files/Andrew_Liu_2.pdf'
 
 function Resume() {
@@ -15,7 +15,7 @@ function Resume() {
             <span className="align-bottom">
                 Download My Resume</span>
         </h1>
-        <div className="p-3 pl-0 m-0 pt-10" data-aos="fade-right" >
+        <div className="p-3 pl-0 m-0 pt-6" data-aos="fade-right" >
             <a href={pdf} download={pdf}>
                 <button className="transition duration-500 bg-transparent hover:bg-orange-400 text-teal-dark font-semibold hover:text-white py-2 px-4 border border-teal-500 hover:border-transparent rounded mr-4 focus:outline-none">
                     <FontAwesomeIcon

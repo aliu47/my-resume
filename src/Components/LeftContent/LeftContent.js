@@ -7,7 +7,7 @@ import Libraries from './Libraries';
 
 function LeftContent(){
     return(
-        <div className="flex-1 m-5 lg:pl-32">
+        <div className="flex-1 m-5 lg:pl-8 font-mono">
             <Resume/>
             <ProgrammingLanguages/>
             <Libraries/>

@@ -13,7 +13,7 @@ import Timeline from './Views/Timeline';
 
 function App() {
   return (
-    <div className="relative pb-10 min-h-screen max-w-screen font-serif">
+    <div className="relative pb-10 min-h-screen max-w-full font-sans justify-center">
       <Router>
       {/* <Header /> */}
 

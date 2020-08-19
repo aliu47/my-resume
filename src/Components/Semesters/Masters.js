@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 function Masters() {
@@ -6,11 +6,11 @@ function Masters() {
         <div className="">
             <div className="flex items-center mb-1 ">
                 <div className="bg-teal-500 rounded-full h-8 w-8"></div>
-                <div className="flex-1 ml-4 font-semibold lg:text-xl">Aug 2018 - May 2020: Master's Degree</div>
+                <div className="flex-1 ml-4 font-semibold lg:text-xl font-mono">Aug 2018 - May 2020: Master's Degree</div>
             </div>
             <div className="ml-12 ">
                 <span className="p-1 flex font-semibold">
-                    GPA:3.72/4.00</span>
+                    GPA: 3.72/4.00</span>
                 <span className="p-1 flex">
                     Concentration in Software/Systems/Networks and Security</span>
 

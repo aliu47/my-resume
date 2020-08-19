@@ -11,10 +11,9 @@ function Home() {
     const props = useSpring({ scroll: 0, from: { scroll: 100 } })
 
     return (
-        <animated.div scrollTop={props.scroll}  >
-            <div className="">
+        <animated.div className="w-12/12" scrollTop={props.scroll}>
                 <div className="text-center">
-                    <div className="">
+                    <div className="sm:mb-20 font-mono">
                         <Info />
                     </div>
                     <div className="lg:mx-64 lg:my-10 lg:mb-20">
@@ -25,13 +24,12 @@ function Home() {
                     <LeftContent />
                     <TimelineContent />
                 </div>
-                <div className="lg:mx-40 lg:my-10 lg:mb-20 text-center">
+                <div className="lg:mx-40 lg:my-10 mb-20 text-center">
                     <ProjectsContent />
                 </div>
-                <div className="lg:mx-64 lg:my-10 lg:mb-20 text-center">
+                <div className="lg:mx-64 lg:my-10 lg:mb-20  text-center">
                     <Contact />
                 </div>
-            </div >
         </animated.div>)
 }
 
